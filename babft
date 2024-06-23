@@ -1,0 +1,165 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("BABFT script", "Synapse")
+
+local Tab = Window:NewTab("Main")
+
+local Section = Tab:NewSection("Autofarm (WAIT 10 SECS AFTER BUTTON CLICKED)")
+
+Section:NewButton("Autofarm (GLITCHY)", "Please Note that its in beta. ALso made by t3mim scripts", function()
+      
+    while true do
+        wait(10)
+           
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/T3mimScripts/autofarm-Build-da-boat/main/t3mim%20scripts"), true))()
+        
+        end
+    
+
+    
+
+end)
+
+local Tab = Window:NewTab("Admins")
+
+local Section = Tab:NewSection("Similiar powers to an admin!")
+
+Section:NewButton("Infinite yield", "Inf yield (Click to execute)", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+Section:NewButton("Nameless admin", "Nameless admin (Click to execute)", function()
+    
+loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+end)
+
+local Tab = Window:NewTab("Player")
+
+local Section = Tab:NewSection("Player")
+
+Section:NewTextBox("WalkSpeed", "WS", function(Value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end)
+
+Section:NewTextBox("JumpPower", "JP", function(Value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+end)
+
+Section:NewButton("Infinite zoom", "you can zoom out of everywhere!", function()
+    game.Players.LocalPlayer.CameraMaxZoomDistance = 999999
+end)
+
+Section:NewButton("Inf jump", "jump in da sky forever!!", function()
+    game:GetService("UserInputService").JumpRequest:connect(function()
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")       
+    end)
+end)
+
+Section:NewToggle("Fov", "Fov", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 120
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 80
+    end
+end)
+
+local Tab = Window:NewTab("Teleports")
+
+local Section = Tab:NewSection("Teleport to the selected areas!")
+
+Section:NewButton("TP to white team", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.1106148, -8.19343281, -591.965576, -0.999999821, 2.03233212e-05, 0.000530838966, -4.27826308e-08, 0.999264359, -0.0383501351, -0.000531222671, -0.0383501276, -0.999264181)
+end)
+
+Section:NewButton("TP to black team", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-582.792725, -8.1963644, -70.0311279, 0.876472652, -0.0218915585, -0.480953634, 4.36877599e-07, 0.99896574, -0.045469068, 0.481451631, 0.0398521647, 0.875566125)
+end)
+
+
+Section:NewButton("TP to red team", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(473.082184, -8.18617535, -65.0809937, 0.010679625, 0.0402084216, 0.999134183, 6.7113433e-08, 0.999191225, -0.0402107239, -0.999942899, 0.000429516658, 0.0106709823)
+end)
+
+Section:NewButton("TP to blue team", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(472.09903, -8.18595219, 300.869324, 0.100789256, 0.0400651097, 0.99410069, -1.07567757e-07, 0.99918884, -0.0402701721, -0.994907737, 0.00405869726, 0.100707501)
+end)
+
+Section:NewButton("TP to pink team", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(471.798889, -8.18709278, 646.150513, 0.0235783663, 0.0406862274, 0.998893678, -9.68575478e-08, 0.999171495, -0.0406975448, -0.999722064, 0.000959486468, 0.0235588439)
+end)
+
+Section:NewButton("TP to green team", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-579.998779, -8.20157909, 294.708801, 0.0189634711, -0.0508614853, -0.998525679, -1.02852937e-07, 0.998705268, -0.0508706383, 0.999820173, 0.000964769162, 0.0189389139)
+end)
+
+Section:NewButton("TP to yellow team", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-589.915161, -8.18642139, 640.32843, -0.0842081532, -0.0403697938, -0.995630026, 3.01632099e-07, 0.999178946, -0.0405137092, 0.9964481, -0.00341186626, -0.0841390043)
+end)
+
+local Section = Tab:NewSection("Stages")
+
+Section:NewButton("TP to secret waterfall", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(128.787292, -8.51091766, 1172.28894, 0.00385273993, -0.0459912345, -0.998934329, 9.24919732e-08, 0.998941839, -0.0459915921, 0.999992609, 0.00017708377, 0.00384867564)
+end)
+
+Section:NewButton("TP to stage 1", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.145607, 55.9466286, 1390.75269, -0.0144476891, -0.112906799, 0.99350071, 2.02652859e-06, 0.993604243, 0.112918623, -0.999895632, 0.00163343549, -0.0143550551)
+end)
+
+Section:NewButton("TP to stage 2", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13.1645718, 51.9307404, 2156.50342, 0.0169936158, -0.246399343, 0.969019532, 1.85486169e-06, 0.969159365, 0.246434927, -0.999855578, -0.00418601371, 0.0164699815)
+end)
+
+Section:NewButton("TP to stage 3", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-17.7597523, 53.5194283, 2922.12622, 0.00572042447, -0.146935269, 0.989129543, 9.19121085e-05, 0.989145815, 0.146937147, -0.999983609, -0.000749630039, 0.00567183923)
+end)
+
+Section:NewButton("TP to stage 4", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-59.6106606, 54.4176598, 3693.28101, -0.0202501044, -0.124236539, 0.992045999, 9.22209583e-05, 0.992249191, 0.124263875, -0.99979496, 0.00260784361, -0.0200816914)
+end)
+
+Section:NewButton("TP to stage 5", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-69.5894623, 55.9156227, 4467.19629, -0.0552097186, -0.326422244, 0.943610311, 8.78252322e-05, 0.94505018, 0.326925457, -0.998474777, 0.0181323346, -0.0521472842)
+end)
+
+Section:NewButton("TP to stage 6", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-26.9366856, 57.8608856, 5236.96387, 0.0146330977, -0.116231322, 0.993114352, 9.23078042e-05, 0.993220866, 0.116242424, -0.99989295, -0.00160931458, 0.0145446258)
+end)
+
+Section:NewButton("TP to stage 7", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-38.517086, 59.4500656, 6014.96289, 0.0146331126, -0.116231404, 0.993114352, 9.23101325e-05, 0.993220866, 0.116242506, -0.99989295, -0.00160931528, 0.0145446407)
+end)
+
+Section:NewButton("TP to stage 8", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-60.9654007, 61.0491447, 7542.84961, -0.0167774763, -0.0559427664, 0.998292983, 9.27930232e-05, 0.998433471, 0.0559522025, -0.999859273, 0.00103137118, -0.0167460013)
+end)
+
+Section:NewButton("TP to stage 9", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12.1093321, 66.2935028, 8314.14844, -0.00115693, -0.174774244, 0.984607875, 9.15101264e-05, 0.984608471, 0.174774453, -0.999999344, 0.00029230339, -0.00112312939)
+end)
+
+local Section = Tab:NewSection("Treasure Chest")
+
+Section:NewButton("Treasure Chest", "TP", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.2686653, -348.098083, 9499.31934, -0.0812622458, 0.0162326023, 0.996560514, -0.000500305789, 0.999866605, -0.016327247, -0.996692598, -0.00182538945, -0.0812432617)
+end)
+
+local Tab = Window:NewTab("Bind")
+
+local Section = Tab:NewSection("Bind")
+
+Section:NewKeybind("hide / unhide script", "Bind", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("Credits")
+
+local Section = Tab:NewSection("Credits")
+
+Section:NewButton("My YT", "Click to copy my yt", function()
+    setclipboard("T3mim scripts")
+    print("thank you for copying my script!!")
+end)
+
+Section:NewLabel("BABFT script made by T3mim scripts.")
